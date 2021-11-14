@@ -1,4 +1,4 @@
-A simpler version of the famous card game BlackJack, which you can on your command line and play with a virtul dealer.
+A simpler version of the famous card game BlackJack, which you can run on your command line and play with a virtul dealer.
 Game rules:
 1) Dealer and player start out with two cards each.
 2) One card of the dealer remains hidden while the other card is visible to everyone.
