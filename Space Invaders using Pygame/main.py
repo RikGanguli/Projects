@@ -242,3 +242,5 @@ while playing:
 
     # update the game window
     pygame.display.update()
+
+#programmed by Rik Ganguli Biswas
