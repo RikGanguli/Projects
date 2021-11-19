@@ -44,7 +44,7 @@ for i in range(no_of_enemies):
     enemy_img.append(pygame.image.load("ufo.png"))  # load the enemy sprite
     enemy_x.append(random.randint(0, 736))  # spawns the enemy with a random x-coord
     enemy_y.append(random.randint(10, 150))  # spawns the enemy with a random y-coord
-    enemy_x_speed.append(13)  # speed of enemy in x-axis
+    enemy_x_speed.append(7)  # speed of enemy in x-axis
     enemy_y_speed.append(40)  # speed of enemy in y-axis
 
 # setting up the bullet
@@ -196,12 +196,12 @@ while playing:
         enemy_x[i] += enemy_x_speed[i]
 
         if enemy_x[i] <= 0:
-            enemy_x_speed[i] = 13  # starts moving towards the right
+            enemy_x_speed[i] = 7  # starts moving towards the right
 
             enemy_y[i] += enemy_y_speed[i]  # the enemies move down when they hit the boundary
 
         elif enemy_x[i] >= 736:
-            enemy_x_speed[i] = -13  # starts moving towards the right
+            enemy_x_speed[i] = -7  # starts moving towards the right
             enemy_y[i] += enemy_y_speed[i]  # the enemies move down when they hit the boundary
 
         # bullet-enemy collision
