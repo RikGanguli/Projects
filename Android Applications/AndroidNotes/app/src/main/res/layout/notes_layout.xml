@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#3F51B5"
+    android:paddingBottom="8sp">
+
+    <TextView
+        android:id="@+id/titleView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#CBDFE4"
+        android:paddingLeft="5sp"
+        android:textAlignment="textStart"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/dateTimeView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#CBDFE4"
+        android:paddingRight="5sp"
+        android:textAlignment="textEnd"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/titleView"
+        app:layout_constraintStart_toStartOf="@+id/titleView"
+        app:layout_constraintTop_toBottomOf="@+id/titleView" />
+
+    <TextView
+        android:id="@+id/descriptionView"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:background="#CBDFE4"
+        android:paddingLeft="5sp"
+        android:paddingRight="5sp"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/titleView"
+        app:layout_constraintTop_toBottomOf="@+id/dateTimeView" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Android Notes</string>
+    <string name="file_name">notes.json</string>
+    <string name="info">Info</string>
+    <string name="add">Add</string>
+    <string name="save">Save</string>
+    <string name="android_notes">Android Notes</string>
+    <string name="_2023_rik_ganguli_biswas">©2023, Rik Ganguli Biswas</string>
+    <string name="version_1_0">Version 1.0</string>
+    <string name="title">Title</string>
+    <string name="text">Text</string>
+    <string name="title2">Title</string>
+    <string name="date">Date</string>
+    <string name="description">Description</string>
+</resources>
