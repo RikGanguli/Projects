@@ -1,1 +1,27 @@
-Hi
+The goal is to build a library management application using a database backend to store information about members, documents, and so on. The application will
+enable users to search for documents, borrow documents, enter new documents, etc. For this project, we record information for a single library and its users.
+
+• Members: Members can search for documents, borrow documents, and return documents. Documents can be borrowed for certain time periods. If a member does not return a document by the due date, they will be
+fined.
+• Librarians: Librarians can check overdue documents, manage users, and add/delete/modify documents.
+
+The main asset of the library is documents. For the project, we will consider the following types of documents:
+
+• Books: Books are written by one or more authors and published by a publisher. Books have a title and may exist in different editions - each published in a certain year. For example, “Database System Concepts” 
+is a book written by authors Silberschatz, Korth, and Sudarshan and published by McGraw-Hill Science/Engineering/Math. The seventh edition was published in 2020.
+• Journal Articles: Journal articles are written by one or more authors, have a title, and are published in a certain journal. Journals have a title and are published by a publisher in issues. Issues have editors and a
+publication date. For example, “Science” is a scientific journal. The article “Antibody Therapeutics in Cancer” written by Mark X. Sliwkowski and IraMellman was published in the “13 September 2013” issue of this journal.
+• Magazines: Magazines have a name and come in issues that are published at a certain time. Each issue of a magazine has a title. Magazine issues have editors and contributors.
+• Thesis and Technical Reports
+
+A library may have several copies of each document. Some documents may not exist as copies in the library. Copies are stored in a certain place inside the library,
+e.g., a room, level,... For each copy, we need to know whether it is currently borrowed and if yes by which member. Members are only allowed to borrow
+documents for a certain time (e.g., 2 weeks). We have also placed restrictions on the number of documents that can be borrowed by a user at a certain time.
+
+The application supports the following actions. We indicate for each action whether it can be executed by librarians or library members.
+• Search for documents (librarian/member)
+• Borrow/return copies of documents (member)
+• Add/Delete/Modify documents and copies (librarian)
+
+We have also added the functionality to save searches which enables the user to store searches and re-execute them later.
+
