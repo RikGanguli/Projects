@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">WeatherApp</string>
+    <string name="wind">Wind:</string>
+    <string name="humidity">Humidity :</string>
+    <string name="uv_index">UV Index :</string>
+    <string name="visibility">Visibility</string>
+    <string name="morning">Morning</string>
+    <string name="afternoon">Afternoon</string>
+    <string name="evening">Evening</string>
+    <string name="night">Night</string>
+    <string name="sunrise">Sunrise:</string>
+    <string name="sunset">Sunset:</string>
+    <string name="feels_like">Feels Like</string>
+    <string name="uv_index_2">UV Index:</string>
+    <string name="morning2">Morning</string>
+    <string name="afternoon2">Afternoon</string>
+    <string name="evening2">Evening</string>
+    <string name="night2">Night</string>
+</resources>
