@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/tipsplitlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/viewBox1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/bill_total_with_tax"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.027" />
+
+    <EditText
+        android:id="@+id/originalBillField"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="#A1A2FB98"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"
+        android:textAlignment="textEnd"
+        android:textSize="20sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/viewBox1"
+        app:layout_constraintEnd_toStartOf="@+id/divider"
+        app:layout_constraintStart_toEndOf="@+id/viewBox1" />
+
+    <TextView
+        android:id="@+id/viewBox2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/tip_percent"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewBox1" />
+
+    <TextView
+        android:id="@+id/viewBox3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="60dp"
+        android:text="@string/tip_amount"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewBox2" />
+
+    <TextView
+        android:id="@+id/viewBox4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/total_with_tip"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewBox3" />
+
+    <TextView
+        android:id="@+id/tipField"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:background="#D3D3D3"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"
+        android:textAlignment="textEnd"
+        android:textSize="20sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/viewBox3"
+        app:layout_constraintEnd_toEndOf="@+id/originalBillField"
+        app:layout_constraintStart_toEndOf="@+id/viewBox3" />
+
+    <TextView
+        android:id="@+id/totalField"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#D3D3D3"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"
+        android:textAlignment="textEnd"
+        android:textSize="20sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/viewBox4"
+        app:layout_constraintEnd_toEndOf="@+id/tipField"
+        app:layout_constraintStart_toStartOf="@+id/tipField" />
+
+    <TextView
+        android:id="@+id/viewBox5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/number_of_people"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/divider"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/peopleField"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="16dp"
+        android:background="#A1A2FB98"
+        android:ems="10"
+        android:inputType="number"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"
+        android:textAlignment="textEnd"
+        android:textSize="20sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/viewBox5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/viewBox5" />
+
+    <Button
+        android:id="@+id/goButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:onClick="calculateTotalPerPerson"
+        android:text="@string/go"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/peopleField"
+        app:layout_constraintStart_toStartOf="@+id/peopleField"
+        app:layout_constraintTop_toBottomOf="@+id/peopleField" />
+
+    <TextView
+        android:id="@+id/viewBox6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="92dp"
+        android:text="@string/total_per_person"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/viewBox5"
+        app:layout_constraintTop_toBottomOf="@+id/viewBox5" />
+
+    <TextView
+        android:id="@+id/perPersonField"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="16dp"
+        android:background="#D3D3D3"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"
+        android:textAlignment="textEnd"
+        android:textSize="20sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/viewBox6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/viewBox6" />
+
+    <Button
+        android:id="@+id/clearButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="210dp"
+        android:layout_marginEnd="8dp"
+        android:onClick="clearScreen"
+        android:text="@string/clear"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.499"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="2dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/clearButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/rg1"
+        android:layout_width="0dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toStartOf="@+id/divider"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewBox2">
+
+        <RadioButton
+            android:id="@+id/tipOne"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:buttonTint="#4B03F4"
+            android:onClick="calculateTotalWithTip"
+            android:text="@string/_12"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/tipTwo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:buttonTint="#4B03F4"
+            android:onClick="calculateTotalWithTip"
+            android:text="@string/_15"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/tipThree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:buttonTint="#4B03F4"
+            android:onClick="calculateTotalWithTip"
+            android:text="@string/_18"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/tipFour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:buttonTint="#4B03F4"
+            android:onClick="calculateTotalWithTip"
+            android:text="@string/_20"
+            android:textSize="20sp" />
+    </RadioGroup>
+</androidx.constraintlayout.widget.ConstraintLayout>
