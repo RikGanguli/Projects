@@ -1,5 +1,5 @@
-The goal is to build a library management application using a database backend to store information about members, documents, and so on. The application will
-enable users to search for documents, borrow documents, enter new documents, etc. For this project, we record information for a single library and its users.
+The goal is to build a library management application using a database backend to store information about members, documents, and so on. The application enables users to search for documents, 
+borrow documents, enter new documents, etc. For this project, we record information for a single library and its users.
 
 • Members: Members can search for documents, borrow documents, and return documents. Documents can be borrowed for certain time periods. If a member does not return a document by the due date, they will be
 fined.
