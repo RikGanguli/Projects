@@ -1,0 +1,26 @@
+<resources>
+    <string name="name_app">Civil Advocacy</string>
+    <string name="name">Civil Advocacy</string>
+    <string name="data_provided_by">Data provided by</string>
+    <string name="google_civic_n_information_api">Google Civic\n Information API</string>
+    <string name="version_1_0">Version 1.0</string>
+    <string name="_2023_rik_ganguli_biswas">Ⓒ 2023, Rik Ganguli Biswas</string>
+    <string name="no_data_for_location">No Data For Location</string>
+    <string name="no_network_connection">No Network Connection</string>
+    <string name="data_cannot_be_accessed">Data Cannot be accessed/loaded\nwithout an internet connection.</string>
+    <string name="help">help</string>
+    <string name="name1">Name</string>
+    <string name="position1">Position</string>
+    <string name="name2">Name</string>
+    <string name="post2">Post</string>
+    <string name="party">party</string>
+    <string name="address">Address:</string>
+    <string name="ad">ad</string>
+    <string name="phone">Phone:</string>
+    <string name="ph">ph</string>
+    <string name="email">Email:</string>
+    <string name="em">em</string>
+    <string name="website">Website:</string>
+    <string name="site">site</string>
+
+</resources>
