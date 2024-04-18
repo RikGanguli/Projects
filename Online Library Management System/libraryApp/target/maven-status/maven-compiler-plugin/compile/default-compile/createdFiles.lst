@@ -1,0 +1,11 @@
+com\libapp\dao\LibrarianDao.class
+com\libapp\AuthenticationController.class
+com\libapp\model\Document.class
+com\libapp\ReturnController.class
+com\libapp\dao\DocumentDao.class
+com\libapp\LoginController.class
+com\libapp\BorrowController.class
+com\libapp\model\Librarian.class
+com\libapp\dao\LoginAccessDao.class
+com\libapp\model\Member.class
+com\libapp\dao\MemberDao.class
